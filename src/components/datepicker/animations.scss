@@ -1,0 +1,28 @@
+.datepicker-slide-enter-active, .datepicker-slide-leave-active {
+  opacity: 1;
+  transition: all .3s;
+}
+.datepicker-slide-enter, .datepicker-slide-leave-to {
+  opacity: 0;
+  transform: translateY(10px) translateX(10px);
+}
+
+.month-slide-enter-active, .month-slide-leave-active {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.month-slide-enter {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.month-slide-leave-to {
+  transform: translateX(-100px);
+  opacity: 0;
+}
